@@ -1,0 +1,17 @@
+###Nmap commands###
+
+#Intense Scan
+nmap -T4 -A -v RANGE
+
+#Ping Scan
+nmap -sn RANGE
+
+#Quick Scan
+nmap -T4 -F RANGE
+
+#Quick Scan Plus
+nmap -sV -T4 -O -F --version-light RANGE
+
+
+
+

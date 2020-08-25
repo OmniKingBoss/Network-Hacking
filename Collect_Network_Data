@@ -1,0 +1,2 @@
+
+#sudo airodump-ng --bssid #RouterMAC --channel #Number --write wpa_handshake wlan1 

