@@ -1,0 +1,1 @@
+crunch 8 12 | aircrack-ng -b #RouterMAC -w - handshake.cap

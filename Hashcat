@@ -1,0 +1,3 @@
+# https://hashcat.net/cap2hccapx/
+
+# hashcat -m 2500 -d 1 #handshake.hccapx text.txt

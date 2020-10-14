@@ -1,0 +1,2 @@
+john --wordlist=#wpa-wordlist --stdout --session=#NameAnything | aircrack-ng -w -b #RouterMAC #handshake.cap
+john --restore=#WhateverYouNamedIt | aircrack-ng -w - -b #RouterMAC #handshake.cap
