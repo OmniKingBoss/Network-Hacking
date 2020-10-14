@@ -1,0 +1,11 @@
+1)yay
+2)Airgeddon
+3)Hak9Tools
+4)Mitmproxy
+5)Neofetch_ascii
+6)Sslstrip2
+7)Subfinder
+8)TrojanFactory
+9)Wps-office
+10)ZAP
+11)zenmap
