@@ -1,0 +1,6 @@
+#After SSHing into target
+
+export DISPLAY=:0.0
+espeak "How you doing"
+beep -f 300.7 -r 10 -d 50 -l 100
+for {1..10} do firefox -new-window "link"; done
