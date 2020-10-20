@@ -1,0 +1,38 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias cls='clear'
+alias ls='ls --color=auto'
+alias neofetch='neofetch --source ~/Files/ASCII\ Images/mk.txt --colors 9 11 4 4 7 11'
+alias bp='sudo bettercap -iface wlan0 -caplet ~/Files/Network\ Hacking/bettercap.cap'
+alias metasploit='cd /opt/metasploit/modules'
+alias v+='amixer set Master 5%+'
+alias v-='amixer set Master 5%-'
+alias videos='cd ~/Videos'
+alias nh='cd ~/Files/Network\ Hacking'
+alias pt='cd ~/Files/Penetration\ Testing'
+alias ip='curl icanhazip.com'
+alias gits='cd ~/Gits'
+alias py='python'
+alias py2='python2'
+# PS1='[\u\W]\$ '
+
+neofetch
+
+function c(){
+	gcc "$1" -o $(basename -s .c "$1")
+}
+
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+
